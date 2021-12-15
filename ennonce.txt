@@ -1,0 +1,17 @@
+Créer 5 machines sur le cloud (grace au terraform fourni/précédent)
+- 1 maitre ansible (A)
+- 2 machine avec un environnement de dev (B)
+- 1 serveur de BDD (C)
+- 1 serveur ngning (D)
+
+Sur la machine (A)
+    Connectez vous en ssh et exécuter le script d'installation d'ansible
+    Créer le fichier d'inventaire des machines créées en les catégorisants comme décrit en haut et copier les fichiers nécessaires
+    Partie Ansible :
+        - Créer un playbook qui agit sur les machines (B) et install a l'aide du module package Python version 3.9
+        - Un role pour la machine (C) qui install un serveur de BDD avec des parametre d'environnement
+        - Playbook 2 pour la machine (D) autant que root : 
+            - Installer un serveur ngning 
+            - Chercher un module permettant de cloner le dépot : " " 
+            - Configurer la connexion a la la BDD créée précédent
+            - Démarrer l'application
